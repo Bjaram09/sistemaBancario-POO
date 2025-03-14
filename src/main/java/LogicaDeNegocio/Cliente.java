@@ -19,7 +19,15 @@ public class Cliente extends Usuario {
     private ArrayList<CuentaCredito> cuentasCredito;
     private ArrayList<CuentaAhorro> cuentasAhorro;
 
-    public Cliente() {}
+    public Cliente() {
+        super();
+        this.sexo = "";
+        this.profesion = "";
+        this.direccion = "";
+        this.cuentasDebito = new ArrayList<>();
+        this.cuentasCredito = new ArrayList<>();
+        this.cuentasAhorro = new ArrayList<>();
+    }
 
     public Cliente(String id, String cedula, String nombre, String apellido1, String apellido2, String correoElectronico, String sexo, String profesion, String direccion) {
         super(id, cedula, nombre, apellido1, apellido2, correoElectronico);
