@@ -17,10 +17,9 @@ public class Administrador extends Usuario {
         super(id, cedula, nombre, apellido1, apellido2, correoElectronico);
     }
 
-    public void registrarUsuario() {
+    public void registrarCliente() {
       
     }
-
     @Override
     public String toString() {
         return "Administrador{} " + super.toString();

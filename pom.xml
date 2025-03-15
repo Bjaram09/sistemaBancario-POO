@@ -10,4 +10,16 @@
         <maven.compiler.release>23</maven.compiler.release>
         <exec.mainClass>com.bryanjara.proyectosistemabancario.ProyectoSistemaBancario</exec.mainClass>
     </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
