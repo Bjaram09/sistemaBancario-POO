@@ -8,7 +8,9 @@ public class Banco {
     private boolean existeAdministrador;
 
     public Banco() {
-
+        this.clientes = new ArrayList<>();
+        this.admin = new Administrador();
+        this.existeAdministrador = false;
     }
 
     public Banco(ArrayList<Cliente> clientes, Administrador admin, boolean existeAdministrador) {
